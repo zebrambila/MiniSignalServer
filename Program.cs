@@ -9,7 +9,6 @@ app.MapGet("/", () => "Hello World!");
 
 app.Run();
 
-
 class MyHub : Hub
 {
     public async IAsyncEnumerable<DateTime> Streaming(CancellationToken cancellationToken)
